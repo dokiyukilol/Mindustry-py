@@ -1,0 +1,652 @@
+set __pyc_sp 0
+jump 33 always
+read __pyc_rc_0 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read value cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read index cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read mem cell1 __pyc_sp
+jump 17 notEqual mem 1
+jump 15 notEqual value null
+read v cell4 index
+set __pyc_ret v
+jump 32 always
+jump 16 always
+write value cell4 index
+jump 32 always
+jump 25 notEqual mem 2
+jump 23 notEqual value null
+read v cell2 index
+set __pyc_ret v
+jump 32 always
+jump 24 always
+write value cell2 index
+jump 32 always
+jump 32 notEqual mem 3
+jump 31 notEqual value null
+read v cell3 index
+set __pyc_ret v
+jump 32 always
+jump 32 always
+write value cell3 index
+op add @counter __pyc_rc_0 1
+jump 51 always
+read __pyc_rc_1 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read value cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read index cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read mem cell1 __pyc_sp
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write index cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write value cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 2 always
+set __pyc_tmp_25 __pyc_ret
+op add @counter __pyc_rc_1 1
+jump 86 always
+read __pyc_rc_2 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read value cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read mem cell1 __pyc_sp
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write null cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 2 always
+set __pyc_tmp_29 __pyc_ret
+op add nums __pyc_tmp_29 1
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write nums cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write value cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 2 always
+set __pyc_tmp_34 __pyc_ret
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write nums cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 2 always
+set __pyc_tmp_38 __pyc_ret
+op add @counter __pyc_rc_2 1
+jump 104 always
+read __pyc_rc_3 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read index cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read mem cell1 __pyc_sp
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write index cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write null cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 2 always
+set __pyc_tmp_42 __pyc_ret
+set __pyc_ret __pyc_tmp_42
+jump 103 always
+op add @counter __pyc_rc_3 1
+jump 120 always
+read __pyc_rc_4 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read mem cell1 __pyc_sp
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write null cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 2 always
+set __pyc_tmp_46 __pyc_ret
+set __pyc_ret __pyc_tmp_46
+jump 119 always
+op add @counter __pyc_rc_4 1
+jump 172 always
+read __pyc_rc_5 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read push_left_value cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read mem cell1 __pyc_sp
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set mem_nums __pyc_ret
+set mem_nums_i mem_nums
+jump 162 lessThan mem_nums_i 1
+op add r mem_nums_i 1
+set l mem_nums_i
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write r cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set rv __pyc_ret
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write l cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set lv __pyc_ret
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write r cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write lv cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_60 __pyc_ret
+op sub mem_nums_i mem_nums_i 1
+jump 135 greaterThanEq mem_nums_i 1
+write mem cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write push_left_value cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_67 __pyc_ret
+op add @counter __pyc_rc_5 1
+jump 186 always
+read __pyc_rc_6 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read max_val cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read min_val cell1 __pyc_sp
+op sub __pyc_tmp_76 max_val min_val
+op add __pyc_tmp_75 __pyc_tmp_76 1
+op rand __pyc_tmp_74 __pyc_tmp_75
+op add __pyc_tmp_72 min_val __pyc_tmp_74
+op floor __pyc_tmp_71 __pyc_tmp_72
+set __pyc_ret __pyc_tmp_71
+jump 185 always
+op add @counter __pyc_rc_6 1
+set snake_x 40
+set snake_y 40
+set snake_vec_x 0
+set snake_vec_y 0
+set snake_move_speed 3
+set snake_len 1
+set back_color_R 0
+set back_color_G 0
+set back_color_B 0
+jump 203 always
+read __pyc_rc_7 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read value cell1 __pyc_sp
+op pow __pyc_tmp_80 value 0.5
+set __pyc_ret __pyc_tmp_80
+jump 202 always
+op add @counter __pyc_rc_7 1
+jump 222 always
+read __pyc_rc_8 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read y2 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read x2 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read y1 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read x1 cell1 __pyc_sp
+op sub __pyc_tmp_86 x2 x1
+op pow __pyc_tmp_85 __pyc_tmp_86 2
+op sub __pyc_tmp_91 y2 y1
+op pow __pyc_tmp_90 __pyc_tmp_91 2
+op add __pyc_tmp_84 __pyc_tmp_85 __pyc_tmp_90
+op sqrt __pyc_tmp_83 __pyc_tmp_84
+set __pyc_ret __pyc_tmp_83
+jump 221 always
+op add @counter __pyc_rc_8 1
+jump 248 always
+read __pyc_rc_9 cell1 __pyc_sp
+sensor up switch1 @enabled
+sensor down switch2 @enabled
+sensor left switch3 @enabled
+sensor right switch4 @enabled
+jump 232 equal up 0
+set snake_vec_x 0
+set snake_vec_y 2
+jump 243 always
+jump 236 equal down 0
+set snake_vec_y -2
+set snake_vec_x 0
+jump 243 always
+jump 240 equal left 0
+set snake_vec_x -2
+set snake_vec_y 0
+jump 243 always
+jump 243 equal right 0
+set snake_vec_x 2
+set snake_vec_y 0
+control enabled switch1 0
+control enabled switch2 0
+control enabled switch3 0
+control enabled switch4 0
+op add @counter __pyc_rc_9 1
+jump 259 always
+read __pyc_rc_10 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read w cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read y cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read x cell1 __pyc_sp
+draw color 0 255 0 255
+draw rect x y w w
+op add @counter __pyc_rc_10 1
+jump 286 always
+read __pyc_rc_11 cell1 __pyc_sp
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set __pyc_tmp_112 __pyc_ret
+op add last_snake_len __pyc_tmp_112 1
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write last_snake_len cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set last_x __pyc_ret
+write 3 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write last_snake_len cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set last_y __pyc_ret
+draw color back_color_R back_color_G back_color_B 255
+draw rect last_x last_y 2 2
+op add @counter __pyc_rc_11 1
+jump 327 always
+read __pyc_rc_12 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read y cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read x cell1 __pyc_sp
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set last_snake_len __pyc_ret
+set i 0
+jump 324 greaterThanEq i last_snake_len
+op add index i 1
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write index cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set last_x __pyc_ret
+write 3 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write index cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set last_y __pyc_ret
+op equal __pyc_tmp_136 last_x x
+op equal __pyc_tmp_139 last_y y
+jump 322 equal __pyc_tmp_136 0
+jump 322 equal __pyc_tmp_139 0
+set __pyc_ret true
+jump 326 always
+op add i i 1
+jump 300 always
+set __pyc_ret false
+jump 326 always
+op add @counter __pyc_rc_12 1
+jump 356 always
+read __pyc_rc_13 cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read y cell1 __pyc_sp
+op sub __pyc_sp __pyc_sp 1
+read x cell1 __pyc_sp
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set __pyc_tmp_144 __pyc_ret
+op equal apple_x __pyc_tmp_144 x
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 3 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set __pyc_tmp_148 __pyc_ret
+op equal apple_y __pyc_tmp_148 y
+jump 353 equal apple_x 0
+jump 353 equal apple_y 0
+set __pyc_ret true
+jump 355 always
+set __pyc_ret false
+jump 355 always
+op add @counter __pyc_rc_13 1
+jump 366 always
+read __pyc_rc_14 cell1 __pyc_sp
+draw clear 255 back_color_G back_color_B
+drawflush display1
+control enabled switch1 0
+control enabled switch2 0
+control enabled switch3 0
+control enabled switch4 0
+control enabled switch5 0
+op add @counter __pyc_rc_14 1
+jump 429 always
+read __pyc_rc_15 cell1 __pyc_sp
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 80 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 173 always
+set ax __pyc_ret
+op mod __pyc_tmp_166 ax 2
+jump 384 equal __pyc_tmp_166 0
+op add __pyc_tmp_170 ax 1
+jump 381 greaterThan __pyc_tmp_170 80
+op add ax ax 1
+jump 384 always
+op sub __pyc_tmp_175 ax 1
+jump 384 lessThan __pyc_tmp_175 0
+op sub ax ax 1
+set apple_x ax
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 80 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 173 always
+set ax __pyc_ret
+op mod __pyc_tmp_182 ax 2
+jump 401 equal __pyc_tmp_182 0
+op add __pyc_tmp_186 ax 1
+jump 398 greaterThan __pyc_tmp_186 80
+op add ax ax 1
+jump 401 always
+op sub __pyc_tmp_191 ax 1
+jump 401 lessThan __pyc_tmp_191 0
+op sub ax ax 1
+set apple_y ax
+jump 404 lessThanEq apple_x 80
+set apple_x 80
+jump 406 lessThanEq apple_y 80
+set apple_y 80
+jump 408 greaterThanEq apple_x 0
+set apple_x 0
+jump 410 greaterThanEq apple_y 0
+set apple_y 0
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write apple_x cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_204 __pyc_ret
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 3 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write apple_y cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_208 __pyc_ret
+op add @counter __pyc_rc_15 1
+jump 448 always
+read __pyc_rc_16 cell1 __pyc_sp
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set apple_x __pyc_ret
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 3 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 87 always
+set apple_y __pyc_ret
+draw color 255 0 0 255
+draw rect apple_x apple_y 2 2
+op add @counter __pyc_rc_16 1
+jump 550 always
+read __pyc_rc_17 cell1 __pyc_sp
+draw clear back_color_R back_color_G back_color_B
+set snake_len 1
+set snake_x 40
+set snake_y 40
+write @counter cell1 __pyc_sp
+jump 367 always
+set __pyc_tmp_226 __pyc_ret
+write @counter cell1 __pyc_sp
+jump 430 always
+set __pyc_tmp_227 __pyc_ret
+drawflush display1
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write snake_x cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_228 __pyc_ret
+write 3 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write snake_y cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_232 __pyc_ret
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write snake_len cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_236 __pyc_ret
+write 3 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write snake_len cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_240 __pyc_ret
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 4 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 1 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_244 __pyc_ret
+control enabled switch1 0
+control enabled switch2 0
+control enabled switch3 0
+control enabled switch4 0
+set i 0
+jump 523 greaterThanEq i 30
+write 4 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write i cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_253 __pyc_ret
+op add i i 1
+jump 511 always
+set i 0
+jump 536 greaterThanEq i 30
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write i cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_258 __pyc_ret
+op add i i 1
+jump 524 always
+set i 0
+jump 549 greaterThanEq i 30
+write 3 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write i cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_263 __pyc_ret
+op add i i 1
+jump 537 always
+op add @counter __pyc_rc_17 1
+sensor __pyc_tmp_267 switch5 @enabled
+jump 650 notEqual __pyc_tmp_267 true
+print "������"
+printflush message1
+write @counter cell1 __pyc_sp
+jump 449 always
+set __pyc_tmp_270 __pyc_ret
+jump 650 equal true 0
+sensor __pyc_tmp_272 switch5 @enabled
+jump 567 notEqual __pyc_tmp_272 false
+print "����,���շ��� "
+print snake_len
+printflush message1
+write @counter cell1 __pyc_sp
+jump 357 always
+set __pyc_tmp_276 __pyc_ret
+jump 650 always
+write @counter cell1 __pyc_sp
+jump 223 always
+set __pyc_tmp_277 __pyc_ret
+op add snake_x snake_x snake_vec_x
+op add snake_y snake_y snake_vec_y
+op greaterThan __pyc_tmp_280 snake_x 80
+op greaterThan __pyc_tmp_283 snake_y 80
+jump 576 notEqual __pyc_tmp_280 0
+jump 584 equal __pyc_tmp_283 0
+print "����,���շ��� "
+print snake_len
+printflush message1
+write @counter cell1 __pyc_sp
+jump 357 always
+set __pyc_tmp_288 __pyc_ret
+jump 650 always
+jump 649 always
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write snake_x cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 121 always
+set __pyc_tmp_289 __pyc_ret
+write 3 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write snake_y cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 121 always
+set __pyc_tmp_292 __pyc_ret
+write snake_x cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write snake_y cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 328 always
+set __pyc_tmp_296 __pyc_ret
+op equal __pyc_tmp_295 0 __pyc_tmp_296
+jump 611 equal __pyc_tmp_295 0
+write @counter cell1 __pyc_sp
+jump 260 always
+set __pyc_tmp_299 __pyc_ret
+jump 639 always
+op add snake_len snake_len 1
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write snake_len cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_301 __pyc_ret
+write 3 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 0 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write snake_len cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 34 always
+set __pyc_tmp_305 __pyc_ret
+write @counter cell1 __pyc_sp
+jump 367 always
+set __pyc_tmp_309 __pyc_ret
+write @counter cell1 __pyc_sp
+jump 430 always
+set __pyc_tmp_310 __pyc_ret
+print "���� "
+print snake_len
+printflush message1
+write snake_x cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write snake_y cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write 2 cell1 __pyc_sp
+op add __pyc_sp __pyc_sp 1
+write @counter cell1 __pyc_sp
+jump 249 always
+set __pyc_tmp_313 __pyc_ret
+drawflush display1
+jump 558 notEqual true 0
+end
+
